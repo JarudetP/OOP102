@@ -1,3 +1,12 @@
+// main.go
+// จุดเริ่มต้นของโปรแกรม ต่อทุกชั้นเข้าด้วยกัน (Dependency Injection)
+//
+// ลำดับการสร้าง
+//   1. Repository (ตู้เก็บข้อมูล)
+//   2. UseCase (สมอง) ใส่ Repository เข้าไป
+//   3. Handler (ผู้รับคำสั่ง) ใส่ UseCase เข้าไป
+//   4. เริ่มรัน
+
 package main
 
 import (
